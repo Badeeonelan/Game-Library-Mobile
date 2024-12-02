@@ -13,7 +13,7 @@ export default function Input(props: TextInputProps & { isPassword?: boolean }) 
 				{...props} 
 				style={styles.input} 
 				secureTextEntry={props.isPassword && !isPasswordVisible}
-				placeholderTextColor={Colors.gray}/>
+				placeholderTextColor={Colors.gray} multiline={false}/>
 
 			{props.isPassword && 
 				<Pressable onPress={() => setIsPasswordVisible(state => !state)} style={styles.eyeIcon}>{isPasswordVisible ? <TrueVisibility/> : <FalseVisibility/>}</Pressable>
@@ -31,8 +31,9 @@ const styles = StyleSheet.create({
 		width: '100%',
 		backgroundColor: Colors.violetDark,
 		fontSize: 16,
-		lineHeight: 1.2,
-		borderRadius: 10
+		borderRadius: 10,
+		fontFamily: 'FiraSans',
+		textAlignVertical: 'center'
 	},
 
 	eyeIcon: {

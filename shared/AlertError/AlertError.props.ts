@@ -1,3 +1,3 @@
 export interface AlertErrorProps {
-	isActive: boolean
+	isActive: string | undefined
 }

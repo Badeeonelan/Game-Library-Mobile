@@ -30,12 +30,12 @@ export default function AlertError(props: AlertErrorProps) {
 		}
 	}, [props.isActive]);
 
-	// if (!props.isActive) {
-	// 	return <></>
-	// }
+	if (!props.isActive) {
+		return <></>
+	}
 
 	return (<Animated.View style={{...styles.alertBody, transform: [{translateY: animatedValue}]}}>
-			  		<Text style={styles.alertText}>Неверный логин или пароль</Text>
+			  		<Text style={styles.alertText}>{props.isActive}</Text>
 			  </Animated.View>)
 }
 

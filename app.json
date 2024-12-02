@@ -1,12 +1,17 @@
 {
   "expo": {
     "name": "Native-App",
-    "slug": "Native-App",
+    "slug": "kjh",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "backgroundColor": "#16171D",
+    "splash": {
+      "image": "./assets/images/damir.jpg",
+      "backgroundColor": "#16171D"
+    },
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -32,10 +37,20 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "68fc0784-fd59-43b2-8250-e20047e4c882"
+      }
+    },
+    "owner": "bubuilda"
   }
 }
